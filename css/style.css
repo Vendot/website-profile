@@ -1,0 +1,505 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #213546;
+    background: #FF7777;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #4F84C4;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #00539C;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1050px;
+}
+
+
+/*******************************/
+/********** Header CSS *********/
+/*******************************/
+.header {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+@media (min-width: 1200px) {
+    .header .container-fluid {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.header .brand {
+    position: relative;
+}
+
+.header .brand img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 100px;
+}
+
+.header .topbar {
+    position: relative;
+    text-align: right;
+}
+
+.header .topbar .topbar-col {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.header .topbar-col a {
+    color: #213546;
+    font-size: 13px;
+}
+
+.header .topbar-col a i {
+    margin-right: 10px;
+    color: #4F84C4;
+}
+
+.header .topbar-social {
+    position: relative;
+}
+
+.header .topbar-social a {
+    display: inline-block;
+}
+
+.header .topbar-social a i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+.header .topbar-social a:last-child i {
+    margin: 0;
+}
+
+.header .topbar-social a:hover i {
+    color: #4F84C4;
+}
+
+.header .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #bbbbbb;
+}
+
+.header .dropdown-menu a.active {
+    color: #4F84C4;
+}
+
+@media (min-width: 992px) {
+    .header .navbar {
+        background: #ffffff !important;
+    }
+    
+    .header .navbar-brand {
+        display: none;
+    }
+    
+    .header .navbar-light a.nav-link {
+        position: relative;
+        padding: 8px 10px;
+        color: #213546;
+        font-size: 16px;
+        z-index: 1;
+    }
+    
+    .header .navbar-light a.nav-link:hover,
+    .header .navbar-light a.nav-link.active {
+        color: #4F84C4;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .brand {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar .topbar-col {
+        margin: 0;
+    }
+    
+    .header .topbar .topbar-social {
+        margin-top: 5px;
+    }
+    
+    .header .navbar {
+        background: #ffffff !important;
+        border: 1px solid #eeeeee;
+        z-index: 1;
+    }
+    
+    .header a.nav-link {
+        padding: 5px 0;
+    }
+    
+    .header .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+.header .navbar .btn {
+    position: relative;
+    margin-left: 15px;
+    padding: 12px 25px 10px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(#4F84C4, #00539C);
+    transition: .5s;
+}
+
+.header .navbar .btn:hover {
+    background: linear-gradient(#00539C, #4F84C4);
+}
+
+.header .navbar .btn i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+    .header .navbar .btn {
+        margin: 15px 0 10px 0;
+    }
+}
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(to right, #00539C, #4F84C4 50%);
+}
+
+.page-header h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 6.5px;
+    right: -6px;
+    border-radius: 7px;
+    background: #ffffff;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+
+/*******************************/
+/*********** Hero CSS **********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 45px 60px;
+    }
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.hero p {
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+@media (max-width: 767.98px) {
+    .hero img {
+        margin-top: 30px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    left: calc(50% - 30px);
+    bottom: 0;
+    background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);
+    border-radius: 100%;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+@media (min-width: 768px) {
+    .about .container-fluid {
+        padding: 0;
+    }
+    
+    .about .row {
+        margin: 0;
+    }
+    
+    .about .col-md-6:first-child {
+        padding: 0;
+    }
+    
+    .about .col-md-6:last-child {
+        padding: 0 60px;
+    }
+}
+
+.about p {
+    color: #213546;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 0 30px 30px 0;
+}
+
+@media(max-width: 767.98px) {
+    .about img {
+        margin-bottom: 30px;
+        border-radius: 30px 30px 0 0;
+    }
+}
+
+
+/*******************************/
+/******* Single Page CSS *******/
+/*******************************/
+.single {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 65px 0;
+}
+
+.single h2.section-title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+}
+
+.single h2.section-title::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);
+    border-radius: 0 100% 100% 0; 
+}
+
+.single h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.single p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+
+/* Slide Show Start*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Slide Show Start*/
